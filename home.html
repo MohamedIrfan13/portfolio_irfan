@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="assets/Mohamed Irfan M.jpg" alt="profile pic" class="profile-pic">
+            <h1 class="site-title">Portfolio</h1>
+        </div>
+
+        <div class="hamburger" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="nav-center">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#education">Journey</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <section id="home" class="home">
+        <div class="home-left">
+            <div class="text-content">
+            <h3 class="greeting">Hi, Hello</h3>
+            <h1 class="name">I am <span class="name">Mohamed Irfan</span></h1>
+            <h2 class="role">and I'm a <span id="role-text"></span></h2>
+            <p class="summary">
+                Web Developer with 3 months of frontend experience and strong knowledge of Java, HTML, CSS, and JavaScript. Good at solving problems and learning new things quickly. Looking for a Software Engineer role to grow and contribute to a great team.
+    
+            </p>
+            <a href="assets/Mohamed Irfan M Resume.pdf" class="resume-btn" target="_blank" onclick="viewAndDownload()">Resume</a>
+        </div>
+    </div>
+        <div class="home-right">
+            <div class="card">
+                <img src="assets/bigimage.png" alt="profile image">
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="card-front">
+                    <i class="fa-brands fa-html5 skill-icon"></i>
+                    <span>Frontend</span>
+                </div>
+                <div class="card-back">
+                    HTML, CSS, JavaScript, React
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="card-front">
+                    <i class="fa-brands fa-java"></i>
+                    <span>Backend</span>
+                </div>
+                <div class="card-back">
+                    Java, MySQL(database)
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="card-front">
+                    <i class="fa-brands fa-figma"></i>
+                    <span>Design</span>
+                </div>
+                <div class="card-back">
+                    Figma, Photoshop
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="card-front">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>Others</span>
+                </div>
+                <div class="card-back">
+                    Git, Linux
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2 class="project-title">Projects</h2>
+      <div class="project-wrapper">
+        <div class="project-container">
+            <input type="radio" name="slide" id="project1" checked>
+            <label for="project1" class="project-card">
+                <div class="project-row">
+                    <div class="project-icon">1</div>
+                    <div class="project-description">
+                        <h3>Safety Alerts</h3>
+                        <ul class="project-description-list">
+                            <li> Built a web interface for a real-time alert system to notify users about nearby safety incidents.</li>
+                            <li>Designed responsive UI to display alerts like natural disasters, crimes, and cyber threats</li>
+                            <li>Integrated with backend services using Apache Kafka for live event data streaming.</li>
+                            <li>Collaborated with backend team to support AI-based alert filtering and impact prediction.</li>
+                            <li>Helped improve community awareness and emergency response through smart notifications.</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </label>
+             <input type="radio" name="slide" id="project2" checked>
+            <label for="project2" class="project-card">
+                <div class="project-row">
+                    <div class="project-icon">2</div>
+                    <div class="project-description">
+                        <h3>BANK APPLICATON DEMO</h3>
+                       <p>Built a demo bank application entirely in Java with features like account creation, balance check, and transactions.</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="project3" checked>
+            <label for="project3" class="project-card">
+                <div class="project-row">
+                    <div class="project-icon">3</div>
+                    <div class="project-description">
+                        <h3>EXPENSE TRACKER</h3>
+                       <p>Developed an expense tracker entirely in Java to manage and analyze daily spending.</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="project4" checked>
+            <label for="project4" class="project-card">
+                <div class="project-row">
+                    <div class="project-icon">4</div>
+                    <div class="project-description">
+                        <h3>LIBRARY SYSTEM</h3>
+                       <p>Developed a console-based Library Management System in Java with features to add, view, issue, and return books using an object-oriented design.</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+      </div>
+        
+    </section>
+    <section id="works">
+        <h2 class="work-title">Works</h2>
+        <div class="work-container">
+            <div class="card-container">
+                <div class="workCard-image">
+                    <img src="assets/work 1.png" alt="Work 1" class="work-img">
+                    <div class="card-cont">
+                        <h2 class="card-title">Front End</h2>
+                        <span class="card-description">I am capable of developing a frontend with a responsive and user-friendly design similar to this.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="workCard-image">
+                    <img src="assets/work 2.png" alt="Work 2" class="work-img">
+                    <div class="card-cont">
+                        <h2 class="card-title">Back End</h2>
+                        <span class="card-description">I can build secure and efficient backend systems using Java.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="workCard-image">
+                    <img src="assets/work 3.png" alt="Work 3" class="work-img">
+                    <div class="card-cont">
+                        <h2 class="card-title">UI/UX</h2>
+                        <span class="card-description">I create engaging UI/UX designs with Figma and Photoshop to deliver seamless user experiences.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <h2 class="edu-exp-title">Journey</h2>
+        <div class="edu-exp-container">
+            <div class="exp-side">
+                <h3>Experience</h3>
+                <div class="exp-item">
+                    <h4>Frontend Developer Intern</h4>
+                    <p>FDSMax (vellore)</p>
+                    <ul>
+                        <li>Developed responsive user interfaces using React for multiple web-based applications.</li>
+                        <li>Collaborated with backend developers to integrate frontend features with server-side logic.</li>
+                        <li>Gained hands-on experience working with databases and backend APIs.</li>
+                        <li>Participated in code reviews and team discussions to improve application performance and usability.</li>
+                    </ul>
+                </div>
+                <div class="exp-item">
+                    <h4>Java Developer Intern</h4>
+                    <p>Code Builder</p>
+                    <ul>
+                        <li>Designed and developed a user-friendly website interface, resulting in a user-friendly website interface to streamline connections between serivce provider and customers.</li>
+                        <li>integrated back-end APIs to enhance website functionality and performance.</li>
+                        <li>Strengthend back-end development skills through practical experience in a real-word project.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="edu-side">
+                <h3>Education</h3>
+                <div class="edu-item"><h4>B.Tech - Information Technology</h4>
+                <p>Mailam Engineering College  -  2021-2025</p>
+            <p>CGPA : 8.2</p>
+        </div>
+        <div class="edu-side">
+            <h3>Education</h3>
+            <div class="edu-item"><h4>12th</h4>
+            <p>Sri Aravindar Higher Secondary School  -  2020-2021</p>
+        <p>Percentage : 74%</p>
+    </div>
+    <div class="edu-side">
+        <h3>Education</h3>
+        <div class="edu-item"><h4>10th</h4>
+        <p>Sri Aravindar Higher Secondary School  -  2018-2019</p>
+    <p>Percentage : 65%</p>
+</div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+       <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Contact Me</h2>
+                <p>Reach out for collaborations, opportunities, or just to say hello I’d be happy to connect with you.</p>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="afd55d6a-7dfd-4cfd-9824-0a122e0a6cce">
+            <input type="text" name="name" placeholder="Enter Your Name" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="Enter Your Email id" class="contact-inputs" required>
+            <textarea name="message" placeholder="Type your message"  class="contact-inputs" required></textarea>
+            <button class="send-btn" type="submit">Send</button>
+
+        </form>
+        <div class="contact-right">
+            <img src="assets/contact pic.png" alt="contact-pic">
+        </div>
+       </div>
+    </section>
+    
+    <section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                <h3>Contact Me</h3>
+                <p><a href=""><i class="fa-brands fa-linkedin"></i>Linkedin</a></p>
+                <p><i class="fa-solid fa-envelope"></i>Mail: mdirfanm0713@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>Phone: +91 8148718474</p>
+                <p><i class="fa-brands fa-whatsapp"></i>WhatsApp: 8148718474</p>
+            </div>
+            
+            
+                <div class="footer-right">
+                  <h3>Quick Links</h3>
+                 <ul class="quick-list">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#works">Works</a></li>
+                  <li><a href="#education">Journey</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                 </ul>
+              </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Mohamed Irfan M | All Rights Reserved</p>
+            </div>
+
+                
+        </footer>
+    </section>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+function toggleMenu() {
+  document.querySelector(".nav-center").classList.toggle("active");
+}
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
